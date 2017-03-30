@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<!--Change background image?-->
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">    
+    <link rel="stylesheet" href="external/css1.css">
+    <link rel="stylesheet" href="external/css2.css">
+    <script src="external/jq1.js"></script>
+    <script src="external/jq2.js"></script>
+	<title>Efficient Health Portal</title>
+</head>
+<body style = "background:url(Test.jpg);background-repeat:no-repeat;background-size:cover">
+	<div class = "container" style = "background-color:white;padding:4%;opacity:0.9">
+	<div align="center">
+		<h1>Efficient Health Portal</h1>
+		<ul class="nav nav-pills nav-justified"">
+			<li class="active"><a data-toggle="tab" href="#Patient">Patient</a></li> 
+			<li><a data-toggle="tab" href="#Doctor">Doctor</a></li>
+		</ul>
+	</div>
+	<br/>
+	<div>
+		<div class="tab-content">
+			<div id="Patient" class="tab-pane fade in active">
+				<h4 align="center">Patient Login</h2><hr width="50%"/>
+				<form action = "patientLogin.php" method = "post">
+					<div class="col-sm-offset-2 col-sm-8">
+						Patient ID: <input type = "text" name = "username" id = "username" placeholder="Enter patient ID" required/> 
+					</div>
+					<div class="col-sm-offset-2 col-sm-8">
+						Password: <input type = "password" name = "password" id = "password" placeholder="Enter password" required/> 
+					</div>
+					<div class="col-sm-offset-2 col-sm-8" align = "center">
+						<input type = "submit" value = "Login"/>
+					</div>
+				</form>
+				<div class="col-sm-offset-2 col-sm-8" align="center">
+					<br/>
+					<a style = "font-size:1.5em" href = "SignUp.html">Sign Up!</a>
+				</div>
+			</div>
+			<div id="Doctor" class="tab-pane fade">
+				<h4 align="center">Doctor Login</h2><hr width="50%"/>
+				<form action = "doctorLogin.php" method = "post">
+					<div class="col-sm-offset-2 col-sm-8">
+						Doctor ID: <input type = "text" name = "username" id = "username" placeholder="Enter doctor ID" required/>
+					</div>
+					<div class="col-sm-offset-2 col-sm-8">
+					Password: <input type = "password" name = "password" id = "password" placeholder="Enter password" required/> 
+					</div>
+					<div class="col-sm-offset-2 col-sm-8" align="center">
+						<input type = "submit" value = "Login"/>
+					</div>
+				</form>
+				<div class="col-sm-offset-2 col-sm-8" align="center">
+					<br/>
+					<a style = "font-size:1.5em" href = "SignUp.html">Sign Up!</a>
+				</div>
+			</div>
+		</div><br/>
+	</div>
+	</div>
+</body>
+</html>

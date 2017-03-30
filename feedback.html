@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">    
+    <link rel="stylesheet" href="external/css1.css">
+    <link rel="stylesheet" href="external/css2.css">
+	<script src="external/jq1.js"></script>
+    <script src="external/jq2.js"></script>
+	<title>Feedback</title>
+  </head>
+  <body style = "background:url(Feedback.jpg);background-repeat:no-repeat;background-size:cover">
+	<div class = "container" style = "background-color:white;padding:4%;opacity:0.75">
+				<h4 align="center">Feedback Form</h2><hr width="50%"/>
+				<form action = "feedback.php" method = "post">
+				<div class="col-sm-offset-2 col-sm-8">
+				Your Patient ID:<input type="text" name="pid" id="pid" required>
+				</div>
+				<div class="col-sm-offset-2 col-sm-8">
+				Doctor's Name:<input type="text" name="dname" id="dname" required>
+				</div>
+					<div class="col-sm-offset-2 col-sm-8">
+						  The information provided to you prior to your appointment:<br/>
+        <input id="r1a" type="radio" name="ra" value="1">
+        <label for="r1a">1</label>
+        <input id="r2a" type="radio" name="ra" value="2">
+        <label for="r2a">2</label>
+        <input id="r3a" type="radio" name="ra" value="3">
+        <label for="r3a">3</label>
+        <input id="r4a" type="radio" name="ra" value="4">
+        <label for="r4a">4</label>
+        <input id="r5a" type="radio" name="ra" value="5" checked>
+        <label for="r5a">5</label>
+					</div>
+					<div class="col-sm-offset-2 col-sm-8">
+						The promptness and efficiency of your appointment:<br/>
+		<input id="r1b" type="radio" name="rb" value="1">
+        <label for="r1b">1</label>
+        <input id="r2b" type="radio" name="rb" value="2">
+        <label for="r2b">2</label>
+        <input id="r3b" type="radio" name="rb" value="3">
+        <label for="r3b">3</label>
+        <input id="r4b" type="radio" name="rb" value="4">
+        <label for="r4b">4</label>
+        <input id="r5b" type="radio" name="rb" value="5" checked>
+        <label for="r5b">5</label>
+					</div>
+					<div class="col-sm-offset-2 col-sm-8">
+						  The staff you met at your appointment:<br/>
+		<input id="r1c" type="radio" name="rc" value="1">
+        <label for="r1c">1</label>
+        <input id="r2c" type="radio" name="rc" value="2">
+        <label for="r2c">2</label>
+        <input id="r3c" type="radio" name="rc" value="3">
+        <label for="r3c">3</label>
+        <input id="r4c" type="radio" name="rc" value="4">
+        <label for="r4c">4</label>
+        <input id="r5c" type="radio" name="rc" value="5" checked>
+        <label for="r5c">5</label>
+					</div>
+					<div class="col-sm-offset-2 col-sm-8">
+						The information given to you immediately after your appointment :<br/>
+		<input id="r1d" type="radio" name="rd" value="1">
+        <label for="r1d">1</label>
+        <input id="r2d" type="radio" name="rd" value="2">
+        <label for="r2d">2</label>
+        <input id="r3d" type="radio" name="rd" value="3">
+        <label for="r3d">3</label>
+        <input id="r4d" type="radio" name="rd" value="4">
+        <label for="r4d">4</label>
+        <input id="r5d" type="radio" name="rd" value="5" checked>
+        <label for="r5d">5</label>
+					</div>
+					<div class="col-sm-offset-2 col-sm-8">
+						Did you feel that the staff respected your privacy and dignity ?<br/>
+		<input id="r1e" type="radio" name="re" value="1">
+        <label for="r1e">1</label>
+        <input id="r2e" type="radio" name="re" value="2">
+        <label for="r2e">2</label>
+        <input id="r3e" type="radio" name="re" value="3">
+        <label for="r3e">3</label>
+        <input id="r4e" type="radio" name="re" value="4">
+        <label for="r4e">4</label>
+        <input id="r5e" type="radio" name="re" value="5" checked>
+        <label for="r5e">5</label>
+		</div>
+		<div class="col-sm-offset-2 col-sm-8">
+		Comments:<br/>
+		<textarea rows="20" cols="50" name="comm" maxlength = "250" placeholder="Anything which you specifically like or disliked ?"></textarea>
+		</div>
+		<div class="col-sm-offset-2 col-sm-8" align="center">
+					<br/>
+					<input type="submit" value="Submit">
+				</div>
+				<div class="col-sm-offset-2 col-sm-8" align="center">
+					<br/>
+					<a style = "font-size:1.8em" href = "PatientHome.php">...Go back to Home...</a>
+				</div>
+				</form>
+			</div>
+  </body>
+</html>

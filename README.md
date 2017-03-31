@@ -1,6 +1,8 @@
 # hospital-mgmt-website
 Practice website to test out features
 
+**NOTE: Not hosted on Github as it involves database management**
+
 This website is a sample for a doctor-patient managing system that helps doctors in their work and also lets patients view their medical progress. Each time a user visits a doctor, his/her medical entry is stored in the database by doctor. Next time a user logs, he/she may view his/her entire medical history as and when needed. At the same time a doctor may view patient’s medical history even before the patient visits him. This allows for an automated patient doctor handling system through an online interface.
 
 Modules:
